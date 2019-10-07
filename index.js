@@ -15,11 +15,14 @@ let configObj = {
 };
 
 function submitData(name, email) {
-  fetch("http://localhost:3000/users", configObj)
-  .then(function(response) {
+  then(function(response) {
     return response.json();
   })
   .then(function(object) {
     console.log(object);
+  })
+  .catch(function(error) {
+    alert("Bad things! Ragnarők!");
+    console.log(error.message);
   });
 }
