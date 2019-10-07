@@ -15,14 +15,11 @@ let configObj = {
 };
 
 function submitData(name, email) {
-  return fetch("http://localhost:3000/users", configObj)
+  fetch("http://localhost:3000/dogs", configObj)
   .then(function(response) {
     return response.json();
   })
   .then(function(object) {
     console.log(object);
-  })
-  .catch(function(error) {
-    console.log(error.message);
   });
 }
