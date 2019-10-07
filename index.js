@@ -1,4 +1,4 @@
 // Add your code here
 
-fetch submitData(destinationURL, configurationObject) {
+function submitData(destinationURL, configurationObject) {
 }
