@@ -14,4 +14,6 @@ let configObj = {
   body: JSON.stringify(formData)
 };
 
-function 
+function submitData(name, email) {
+  
+}
