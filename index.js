@@ -15,7 +15,7 @@ let configObj = {
 };
 
 function submitData(name, email) {
-  fetch("http://localhost:3000/users", configObj)
+  return fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
